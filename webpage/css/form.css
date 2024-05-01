@@ -1,0 +1,54 @@
+.form-flex-container {
+	align-items: center;
+	background-color: #b1afaf;
+	border: 5px solid #848495;
+	display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 5vh;
+	max-width: 50%;
+    padding: 15px;
+	width: fit-content;
+}
+
+.form {
+    width: 60vw;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: fit-content;
+}
+
+.form > .submit-btn {
+    flex: 1 0 70%;
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    padding: 10px;
+	width: 30%;
+}
+
+.form > label {
+    font-size: medium;
+	flex: 1;
+	margin-bottom: 1vh;
+	min-width: 50%;
+	text-align: left;
+}
+
+.form > input#name, input#email {
+    font-size: small;
+	flex: 1;
+	margin-bottom: 2vh;
+	padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	.form > label, .form > input
+	{
+		flex: 100%;
+		min-width: 85%;
+	}
+}
